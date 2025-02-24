@@ -17,13 +17,13 @@ function SportsCar(make, model, topSpeed) {
 	this.topSpeed=topSpeed;
 }
 
-function getTopSpeed(){
-	return topSpeed;
-}
+
 
 SportsCar.prototype=Object.create(Car.prototype);
 SportsCar.prototype.constructor=SportsCar;
-SportsCar.prototype.getTopSpeed=getTopSpeed;
+SportsCar.prototype.getTopSpeed=function getTopSpeed(){
+	return topSpeed;
+};
 
 // Do not change the code below
 window.Car = Car;
