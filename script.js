@@ -5,7 +5,7 @@ function Car(make, model) {
 }
 
 function getMakeModel(){
-	return `${make} ${model}`;
+	return `${this.make} ${this.model}`;
 }
 
 Car.prototype.getTopSpeed=function(){
