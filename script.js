@@ -4,12 +4,9 @@ function Car(make, model) {
 	this.model=model;
 }
 
-function getMakeModel(){
-	return `${this.make} ${this.model}`;
-}
 
-Car.prototype.getTopSpeed=function(){
-	return topSpeed;
+Car.prototype.getMakeModel=function(){
+	return `${this.make} ${this.model}`;
 }
 
 function SportsCar(make, model, topSpeed) {
